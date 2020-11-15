@@ -1,43 +1,658 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>HTML Email-Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="style.css" />
-	<style>
 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Elena Email-Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+			font-family: 'PT Sans', sans-serif;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border: none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100% !important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		.btn {
+			display: inline-block;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-right: 14px;
+			padding-left: 14px;
+			border-radius: 20px;
+			text-decoration: none;
+			font-size: 14px;
+			font-weight: 400;
+			color: #f5f5f5;
+		}
+
+		.btn--primary {
+			background-color: #50c3af;
+		}
+
+		.btn--secondary {
+			background-color: #d2d5da;
+		}
+
+		.label {
+			color: #384048;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 16px;
+			line-height: normal;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-top: 0;
+		}
+
+		.descr {
+			color: #787b80;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+			margin-top: 0;
+		}
+
+		.main {
+			border: 1px solid #dddddd;
+		}
+
+		.header-td {
+			text-align: center;
+		}
+
+		.header-bg {
+			padding-top: 60px;
+			padding-bottom: 120px;
+		}
+		.header-logo {
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 25px;
+		}
+		.header-menu {
+			padding-bottom: 65px;
+		}
+
+		.header-menu a {
+			display: inline-block;
+			color: #ffffff;
+			font-family: "Open Sans", sans-serif;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: 600;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+		.header-title {
+			color: #ffffff;
+			font-size: 53px;
+			line-height: normal;
+			font-weight: 700;
+			padding-bottom: 35px;
+		}
+
+		.header-subtitle {
+			color: #ffffff;
+			font-size: 15px;
+			font-weight: 700;
+			padding-bottom: 83px;
+		}
+
+		.header-subtitle-line {
+			width: 101px;
+			height: 2px;
+			background-color: #405d64;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.header-line-left {
+			margin-right: 30px;
+		}
+
+		.header-line-right {
+			margin-left: 30px;
+		}
+
+		.header-btn {
+			display: inline-block;
+			padding-top: 18px;
+			padding-bottom: 18px;
+			padding-right: 45px;
+			padding-left: 45px;
+			border-radius: 25px;
+			font-size: 15px;
+			font-weight: 700;
+			text-decoration: none;
+			color: #f5f5f5;
+		}
+
+		.features-td {
+			padding-top: 55px;
+			padding-bottom: 65px;
+			text-align: center;
+		}
+
+		.features-icon {
+			height: 42px;
+			margin-bottom: 30px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.features-label {
+			margin-bottom: 20px;
+		}
+
+		.features-line {
+			display: inline-block;
+			width: 135px;
+			height: 2px;
+			background-color: #e3e4e5;
+			margin-bottom: 25px;
+		}
+
+		.features-descr {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.news-md-td {
+			padding-top: 65px;
+			padding-bottom: 75px;
+		}
+		.news-md-td-block {
+			width: 80px;
+		}
+		.news-md-img {
+			margin-bottom: 40px;
+			margin-right: 0;
+			width: 264px;
+			height: 167px;
+		}
+
+		.news-md-label {
+			font-size: 18px;
+			margin-bottom: 23px;
+			letter-spacing: -1px;
+		}
+
+		.news-md-line {
+			display: block;
+			width: 290px;
+			height: 2px;
+			background-color: #efeff0;
+			margin-bottom: 30px;
+		}
+
+		.news-md-descr {
+			margin-bottom: 35px;
+		}
+
+		.support-td {
+			padding-top: 63px;
+			padding-bottom: 63px;
+		}
+
+		.support-img {
+			display: inline-block;
+			padding-right: 15px;
+			margin-bottom: 19px;
+		}
+
+		.support-label {
+			display: inline-block;
+			color: #384048;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-top: 5px;
+			margin-bottom: 20px;
+			vertical-align: top;
+		}
+
+		.support-line {
+			display: block;
+			background-color: #e7e7e8;
+			width: 100%;
+			height: 2px;
+			margin-bottom: 20px;
+		}
+
+		.support-descr {
+			margin-bottom: 30px;
+		}
+
+		.news-sm-td {
+			padding-top: 60px;
+			padding-bottom: 70px;
+		}
+
+		.news-sm-td-block {
+			width: 80px;
+		}
+
+		.news-sm-img {
+			margin-bottom: 40px;
+		}
+
+		.news-sm-label {
+			margin-bottom: 20px;
+		}
+
+		.news-sm-line {
+			display: block;
+			width: 180px;
+			height: 2px;
+			background-color: #ebecec;
+			margin-bottom: 25px;
+		}
+
+		.news-sm-descr {
+			margin-bottom: 25px;
+		}
+
+		.news-sm-btn {
+			display: inline-block;
+		}
+		.news-bg-td {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+		.news-bg-img {
+			width: 100%;
+		}
+		.sponsor-td {
+			padding-top: 50px;
+			padding-bottom: 70px;
+			text-align: center;
+		}
+
+		.sponsor-icon {
+			display: inline-block;
+			padding-right: 8px;
+			vertical-align: text-top;
+		}
+
+		.sponsor-label {
+			display: inline-block;
+			color: #ffffff;
+			font-family: 'PT Sans', sans-serif;
+			text-transform: uppercase;
+			font-size: 15px;
+			font-weight: 700;
+			margin-top: 0;
+			margin-bottom: 22px;
+		}
+
+		.sponsor-line {
+			display: block;
+			width: 251px;
+			height: 2px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 40px;
+			background-color: #5cc7b4;
+		}
+
+		.sponsor-img {
+			display: inline-block;
+		}
+
+		.footer-td {
+			padding-top: 24px;
+			padding-bottom: 24px;
+		}
+
+		.footer-copyright {
+			color: #aaacaf;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 13px;
+			font-weight: 400;
+			text-align: left;
+		}
+
+		.footer-copyright span {
+			color: #787b80;
+		}
+		.footer-socials-table {
+				margin-left: auto;
+			}
+		.footer-socials a {
+			margin-left: 15px;
+			display: inline-block;
+		}
+		@media (max-width: 870px) {
+			.table-800 {
+				width: 600px !important;
+			}
+
+			.table-600 {
+				width: 550px !important;
+			}
+			.news-md-label {
+				font-size: 17px !important;
+			}
+			.news-sm-label {
+				font-size: 15px !important;
+			}
+			.news-md-td-block {
+				width: 50px !important;
+			}
+			.news-sm-td-block {
+				width: 50px !important;
+			}
+		}
+		@media (max-width: 620px) {
+			.table-800 {
+				width: 400px !important;
+			}
+			.table-600 {
+				width: 320px !important;
+			}
+			.header-bg {
+				padding-bottom: 90px !important;
+			}
+			.header-title {
+				font-size: 40px !important;
+			}
+			.header-menu {
+				padding-bottom: 40px !important;
+			}
+			.header-menu a {
+				padding-top: 5px !important;
+				padding-bottom: 5px !important;
+				padding-right: 5px !important;
+				padding-left: 5px !important;
+			}
+			.header-subtitle {
+				padding-bottom: 65px !important;
+				font-size: 14px !important;
+			}
+			.header-subtitle-line {
+				width: 50px !important;
+			}
+			.header-line-right {
+				margin-left: 15px !important;
+			}
+			.header-line-left {
+				margin-right: 15px !important;
+			}
+			.features-td td {
+				display: block !important;
+			}
+			.news-md-td td {
+				display: block !important;
+			}
+			.news-sm-td td {
+				display: block !important;
+			}
+			.footer-copyright,
+			.footer-socials {
+				display: block !important;
+			}
+			.footer-copyright {
+				margin-bottom: 15px !important;
+				text-align: center !important;
+			}
+			.features-td td {
+				margin-bottom: 20px !important;
+			}
+			.features-descr {
+				width: 170px !important;
+			}
+			.features-icon {
+				margin-bottom: 15px !important;
+			}
+
+			.features-label {
+				margin-bottom: 10px !important;
+			}
+
+			.features-line {
+				margin-bottom: 10px !important;
+			}
+			.support-td {
+				padding-top: 53px !important;
+				padding-bottom: 30px !important;
+			}
+			.support-td td{
+				display: block !important;
+				margin-bottom: 25px !important;
+			}
+			.support-label {
+				font-size: 16px !important;
+			}
+			.news-md-td td {
+				margin-bottom: 25px !important;
+			}
+			.news-md-label {
+				margin-bottom: 18px !important;
+			}
+			.news-md-line {
+				margin-bottom: 25px !important;
+			}
+			.news-md-img {
+				margin-bottom: 30px !important;
+			}
+			.news-md-descr {
+				margin-bottom: 25px !important;
+			}
+			.news-sm-td td{
+				margin-bottom: 25px !important;
+				width: 200px !important;
+				margin-right: auto !important;
+				margin-left: auto !important;
+			}
+			.news-bg-td td {
+				display: block !important;
+				width: 100% !important;
+			}
+			.news-bg-img {
+				margin-bottom: 25px !important;
+			}
+			.sponsor-td {
+				padding-bottom: 50px !important;
+			}
+			.sponsor-td td {
+				display: block !important;
+			}
+			.sponsor-img{
+				margin-bottom: 20px !important;
+			}
+			.footer-socials-table {
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+		}
+		@media (max-width: 420px) {
+			.table-800 {
+				width: 320px !important;
+			}
+
+			.table-600 {
+				width: 260px !important;
+			}
+			.header-bg {
+				padding-top: 40px !important;
+				padding-bottom: 60px !important;
+			}
+			.header-menu a {
+				padding-top: 0px !important;
+				padding-bottom: 0px !important;
+				padding-right: 0px !important;
+				padding-left: 0px !important;
+			}
+			.header-title {
+				font-size: 38px !important;
+			}
+			.header-subtitle {
+				font-size: 12px !important;
+			}
+			.header-subtitle-line {
+				width: 25px !important;
+			}
+			.header-line-right {
+				margin-left: 5px !important;
+			}
+			.header-line-left {
+				margin-right: 5px !important;
+			}
+			.features-td {
+				padding-top: 35px !important;
+    			padding-bottom: 25px !important;
+			}
+			.news-md-td {
+				padding-top: 45px !important;
+    			padding-bottom: 30px !important;
+			}
+			.support-td {
+				padding-top: 43px !important;
+				padding-bottom: 20px !important;
+			}
+			.support-img {
+				height: 18px !important;
+				padding-right: 5px !important;
+				margin-bottom: 15px !important;
+			}
+			.support-label {
+				font-size: 15px !important;
+				margin-top: 2px !important;
+				margin-bottom: 15px !important;
+			}
+			.support-line {
+				margin-bottom: 15px !important;
+			}
+			.support-descr {
+				margin-bottom: 20px !important;
+			}
+			.news-md-label {
+				margin-bottom: 13px !important;
+			}
+			.news-md-line {
+				margin-bottom: 15px !important;
+			}
+			.news-md-img {
+				margin-bottom: 25px !important;
+			}
+			.news-md-descr {
+				margin-bottom: 20px !important;
+			}
+			.news-sm-td {
+				padding-top: 40px !important;
+    			padding-bottom: 25px !important;
+			}
+			.news-sm-img {
+				margin-bottom: 25px !important;
+			}
+			.news-sm-label {
+				margin-bottom: 15px !important;
+			}
+			.news-sm-line {
+				margin-bottom: 15px !important;
+			}
+			.news-sm-descr {
+				margin-bottom: 20px !important;
+			}
+			.news-bg-td {
+				padding-top: 40px !important;
+    			padding-bottom: 40px !important;
+			}
+			.news-bg-img {
+				margin-bottom: 20px !important;
+			}
+			.news-bg-label {
+				margin-bottom: 15px !important; 
+			}
+			.news-bg-line {
+				margin-bottom: 15px !important; 
+			}
+			.news-bg-descr {
+				margin-bottom: 25px !important; 
+			}
+			.sponsor-td {
+				padding-bottom: 30px !important;
+				padding-top: 30px !important;
+			}
+			.sponsor-icon {
+				padding-right: 0px !important;
+				margin-bottom: 15px !important;
+			}
+			.sponsor-label {
+				line-height: normal !important;
+				font-size: 18px !important;
+				margin-bottom: 17px !important;
+			}
+			.sponsor-line {
+				margin-bottom: 30px !important;
+			}
+			.footer-td {
+				padding-top: 15px !important;
+    			padding-bottom: 15px !important;
+			}
+		}
 	</style>
 </head>
 
-<body style="margin: 0; padding: 0;">
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+<body style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;line-height: 100%;font-family: &quot;open sans&quot: ;, sans-serif: ;width: 100% !important;">
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
 		<tbody>
 			<tr>
-				<td>
-					<table class="main table-800" cellpadding="0" cellspacing="0" width="800" align="center">
+				<td style="border-collapse: collapse;">
+					<table class="main table-800" cellpadding="0" cellspacing="0" width="800" align="center" style="min-width: 320px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border: 1px solid #dddddd;">
 						<tr>
-							<td class="header-td">
-								<table cellpadding="0" cellspacing="0" width="800" align="center">
+							<td class="header-td" style="border-collapse: collapse;text-align: center;">
+								<table class="table-800" cellpadding="0" cellspacing="0" width="800" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
 									<tr>
-										<td>
-											<div class="header-bg" style="background: url('img/bg.jpg') #1B3D47 no-repeat;background-size: cover; width: 100%;">
-												<img class="logo" alt="Logo" src="img/logo.png" style="padding-bottom: 45px; margin: 0 auto;">
-												<div class="header-menu">
-													<a href="#" target="_blank" style="margin-right: 10px;">HOME</a>
-													<a href="#" target="_blank" style="margin-right: 10px;">SERVICES</a>
-													<a href="#" target="_blank" style="margin-right: 10px;">Features</a>
-													<a href="#" target="_blank" >CONTACT</a>
+										<td style="border-collapse: collapse;">
+											<div class="header-bg" style="background: url('https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/bg.jpg') #1B3D47 no-repeat;background-size: cover;width: 100%;padding-top: 60px;padding-bottom: 120px;">
+												<img class="logo" alt="Logo" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/logo.png" style="margin-bottom: 45px;margin-left: auto;margin-right: auto;outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;padding: 0;display: block;max-width: 100% !important;">
+												<div class="header-menu" style="padding-bottom: 65px;">
+													<a href="#" target="_blank" style="margin-right: 10px;display: inline-block;color: #ffffff;font-family: &quot;Open Sans&quot;, sans-serif;text-decoration: none;text-transform: uppercase;font-size: 13px;font-weight: 600;padding: 15px;">HOME</a>
+													<a href="#" target="_blank" style="margin-right: 10px;display: inline-block;color: #ffffff;font-family: &quot;Open Sans&quot;, sans-serif;text-decoration: none;text-transform: uppercase;font-size: 13px;font-weight: 600;padding: 15px;">SERVICES</a>
+													<a href="#" target="_blank" style="margin-right: 10px;display: inline-block;color: #ffffff;font-family: &quot;Open Sans&quot;, sans-serif;text-decoration: none;text-transform: uppercase;font-size: 13px;font-weight: 600;padding: 15px;">Features</a>
+													<a href="#" target="_blank" style="display: inline-block;color: #ffffff;font-family: &quot;Open Sans&quot;, sans-serif;text-decoration: none;text-transform: uppercase;font-size: 13px;font-weight: 600;padding: 15px;">CONTACT</a>
 												</div>
-												<div class="header-title">HAVE A GOOD DAY</div>
-												<div class="header-subtitle">
-													<span class="header-subtitle-line header-line-left"></span>
+												<div class="header-title" style="color: #ffffff;font-size: 53px;line-height: normal;font-weight: 700;padding-bottom: 35px;">HAVE A GOOD DAY</div>
+												<div class="header-subtitle" style="color: #ffffff;font-size: 15px;font-weight: 700;padding-bottom: 83px;">
+													<span class="header-subtitle-line header-line-left" style="width: 101px;height: 2px;background-color: #ffffff;opacity: 0.24;display: inline-block;vertical-align: middle;margin-right: 30px;"></span>
 													<span>
 														JUST FOR YOU ON THEMEFOREST
 													</span>
-													<span class="header-subtitle-line header-line-right"></span>
+													<span class="header-subtitle-line header-line-right" style="width: 101px;height: 2px;background-color: #ffffff;opacity: 0.24;display: inline-block;vertical-align: middle;margin-left: 30px;"></span>
 												</div>
-												<a class="header-btn btn--primary"  href="#" target="_blank">GET YOUR COPY NOW</a>
+												<a class="header-btn btn--primary" href="#" target="_blank" style="background-color: #50c3af;display: inline-block;padding-top: 18px;padding-bottom: 18px;padding-right: 45px;padding-left: 45px;border-radius: 25px;font-size: 15px;font-weight: 700;text-decoration: none;color: #f5f5f5;">GET YOUR COPY NOW</a>
 											</div>
 										</td>
 									</tr>
@@ -45,180 +660,190 @@
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#EEEEEF" class="features-td">
-								<table cellpadding="0" cellspacing="0" width="600" align="center">
+							<td bgcolor="#eeeeef" class="features-td" style="border-collapse: collapse;padding-top: 55px;padding-bottom: 65px;text-align: center;">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
 									<tr>
-										<td>
-											<img class="features-icon" alt="user-group" src="img/user-group.png">
-											<h2 class="features-label label">PROFESIONALS</h2>
-											<span class="features-line"></span>
-											<p class="features-descr descr">Lorem ipsum dolor sit amet consectetur elit. </p>
+										<td align="center" style="border-collapse: collapse;">
+											<img class="features-icon" alt="user-group" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/user-group.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;height: 42px;margin-bottom: 30px;margin-right: auto;margin-left: auto;max-width: 100% !important;">
+											<h2 class="features-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">PROFESIONALS</h2>
+											<span class="features-line" style="display: inline-block;width: 135px;height: 2px;background-color: #e3e4e5;margin-bottom: 25px;"></span>
+											<p class="features-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 0;">Lorem ipsum dolor sit amet consectetur elit. </p>
 										</td>
-										<td>
-											<img class="features-icon" alt="user-group" src="img/heart.png">
-											<h2 class="features-label label">AMATEURS</h2>
-											<span class="features-line"></span>
-											<p class="features-descr descr">Lorem ipsum dolor sit amet consectetur elit. </p>
+										<td align="center" style="border-collapse: collapse;">
+											<img class="features-icon" alt="user-group" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/heart.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;height: 42px;margin-bottom: 30px;margin-right: auto;margin-left: auto;max-width: 100% !important;">
+											<h2 class="features-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">AMATEURS</h2>
+											<span class="features-line" style="display: inline-block;width: 135px;height: 2px;background-color: #e3e4e5;margin-bottom: 25px;"></span>
+											<p class="features-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 0;">Lorem ipsum dolor sit amet consectetur elit. </p>
 										</td>
-										<td>
-											<img class="features-icon" alt="user-group" src="img/headset.png">
-											<h2 class="features-label label">FOR EVERYONE</h2>
-											<span class="features-line"></span>
-											<p class="features-descr descr">Lorem ipsum dolor sit amet consectetur elit. </p>
+										<td align="center" style="border-collapse: collapse;">
+											<img class="features-icon" alt="user-group" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/headset.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;height: 42px;margin-bottom: 30px;margin-right: auto;margin-left: auto;max-width: 100% !important;">
+											<h2 class="features-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">FOR EVERYONE</h2>
+											<span class="features-line" style="display: inline-block;width: 135px;height: 2px;background-color: #e3e4e5;margin-bottom: 25px;"></span>
+											<p class="features-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 0;">Lorem ipsum dolor sit amet consectetur elit. </p>
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#F5F5F5" class="news-td">
-								<table cellpadding="0" cellspacing="0" width="600" align="center">
+							<td bgcolor="#f5f5f5" class="news-md-td" style="border-collapse: collapse;padding-top: 65px;padding-bottom: 75px;">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
 									<tr>
-										<td>
-											<img class="news-img" alt="News img" src="img/img-01.jpg" width="264px" height="167px">
-											<h2 class="news-label label">Responsive email template</h2>
-											<span class="news-line"></span>
-											<p class="news-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis</p>
-											<a class="btn btn--primary" href="#" target="_blank">Read more</a>
+										<td style="border-collapse: collapse;">
+											<img class="news-md-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-01.jpg" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;margin-bottom: 40px;max-width: 100% !important;width: 100%;">
+											<h2 class="news-md-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 23px;">Responsive email template</h2>
+											<span class="news-md-line" style="display: block;width: 100%;height: 2px;background-color: #efeff0;margin-bottom: 30px;"></span>
+											<p class="news-md-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 35px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Donec interdum mollis</p>
+											<a class="btn btn--primary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #50c3af;">Read more</a>
 										</td>
-										<td style="width: 60px;"></td>
-										<td>
-											<img class="news-img" alt="News img" src="img/img-02.jpg" width="264px" height="167px">
-											<h2 class="news-label label">Fully compatible template</h2>
-											<span class="news-line"></span>
-											<p class="news-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum mollis</p>
-											<a class="btn btn--primary" href="#" target="_blank">Read more</a>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td bgcolor="#EEEEEF" class="support-td">
-								<table cellpadding="0" cellspacing="0" width="600" align="center">
-									<tr>
-										<td>
-											<img alt="Icon support" class="support-img" src="img/support.png">
-											<h2 class="support-label label">Fully Supported template</h2>
-											<span class="support-line"></span>
-											<p class="support-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem commodo vitae. Ut semper semper lacus. Suspendisse convallis vel tellus at consectetur. Aenean risus arcu</p>
-											<a class="btn btn--secondary" href="#" target="_blank">Read more</a>
+										<td class="news-md-td-block" style="border-collapse: collapse;width: 50px;"></td>
+										<td style="border-collapse: collapse;">
+											<img class="news-md-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-02.jpg" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;margin-bottom: 40px;margin-right: 0;max-width: 100% !important;width: 100%;">
+											<h2 class="news-md-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 23px;">Fully compatible template</h2>
+											<span class="news-md-line" style="display: block;width: 100%;height: 2px;background-color: #efeff0;margin-bottom: 30px;"></span>
+											<p class="news-md-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 35px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Donec interdum mollis</p>
+											<a class="btn btn--primary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #50c3af;">Read more</a>
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#F5F5F5" class="news-sm-td">
-								<table cellpadding="0" cellspacing="0" width="600" align="center">
+							<td bgcolor="#eeeeef" class="support-td" style="border-collapse: collapse;padding-top: 63px;padding-bottom: 63px;">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
 									<tr>
-										<td style="width: 150px;">
-											<img class="news-sm-img" alt="News img" src="img/img-03.jpg" width="180px" height="138px">
-											<h2 class="news-sm-label label">FULLY Layered PSD</h2>
-											<span class="news-sm-line"></span>
-											<p class="news-sm-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<a class="news-sm-btn" href="#" target="_blank">
-												<img src="img/btn.png" alt="">
+										<td style="border-collapse: collapse;">
+											<img alt="Icon support" class="support-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/support.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;padding-right: 15px;margin-bottom: 19px;max-width: 100% !important;">
+											<h2 class="support-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 5px;display: inline-block;margin-bottom: 20px;vertical-align: top;">Fully Supported template</h2>
+											<span class="support-line" style="display: block;background-color: #e7e7e8;width: 100%;height: 2px;margin-bottom: 20px;"></span>
+											<p class="support-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Suspendisse malesuada sodales risus, a adipiscing lorem commodo vitae. Ut semper
+												semper lacus. Suspendisse convallis vel tellus at consectetur. Aenean risus arcu</p>
+											<a class="btn btn--secondary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #d2d5da;">Read more</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+				 		<tr>
+							<td bgcolor="#f5f5f5" class="news-sm-td" style="border-collapse: collapse;padding-top: 60px;padding-bottom: 70px;">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+									<tr>
+										<td style="border-collapse: collapse;">
+											<img class="news-sm-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-03.jpg"  height="138px" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;margin-bottom: 40px;max-width: 100% !important;">
+											<h2 class="news-sm-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">FULLY Layered PSD</h2>
+											<span class="news-sm-line" style="display: block;width: 180px;height: 2px;background-color: #ebecec;margin-bottom: 25px;"></span>
+											<p class="news-sm-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											</p>
+											<a class="news-sm-btn" href="#" target="_blank" style="display: inline-block;">
+												<img src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/btn.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
 											</a>
 										</td>
-										<td style="width: 22px;"></td>
-										<td style="width: 150px;">
-											<img class="news-sm-img" alt="News img" src="img/img-06.jpg" width="180px" height="138px">
-											<h2 class="news-sm-label label">FUll Compatibility</h2>
-											<span class="news-sm-line"></span>
-											<p class="news-sm-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<a class="news-sm-btn" href="#" target="_blank">
-												<img src="img/btn.png" alt="">
+										<td style="width: 20px;"></td>
+										<td style="border-collapse: collapse;">
+											<img class="news-sm-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-06.jpg"  height="138px" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;margin-bottom: 40px;max-width: 100% !important;">
+											<h2 class="news-sm-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">FUll Compatibility</h2>
+											<span class="news-sm-line" style="display: block;width: 180px;height: 2px;background-color: #ebecec;margin-bottom: 25px;"></span>
+											<p class="news-sm-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											</p>
+											<a class="news-sm-btn" href="#" target="_blank" style="display: inline-block;">
+												<img src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/btn.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
 											</a>
 										</td>
-										<td style="width: 22px;"></td>
-										<td style="width: 150px;">
-											<img class="news-sm-img" alt="News img" src="img/img-04.jpg" width="180px" height="138px">
-											<h2 class="news-sm-label label">very great modules</h2>
-											<span class="news-sm-line"></span>
-											<p class="news-sm-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-											<a class="news-sm-btn" href="#" target="_blank">
-												<img src="img/btn.png" alt="">
+										<td style="width: 20px;"></td>
+										<td style="border-collapse: collapse;">
+											<img class="news-sm-img" alt="News img" src="img/img-04.jpg"  height="138px" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;margin-bottom: 40px;max-width: 100% !important;">
+											<h2 class="news-sm-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">very great modules</h2>
+											<span class="news-sm-line" style="display: block;width: 180px;height: 2px;background-color: #ebecec;margin-bottom: 25px;"></span>
+											<p class="news-sm-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											</p>
+											<a class="news-sm-btn" href="#" target="_blank" style="display: inline-block;">
+												<img src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/btn.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
 											</a>
 										</td>
-										
+
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#EEEEEF" class="news-sm-td">
-								<table cellpadding="0" cellspacing="0" width="600" align="center">
+							<td bgcolor="#eeeeef" class="support-td" style="border-collapse: collapse;padding-top: 60px;padding-bottom: 70px;">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
 									<tr>
-										<td>
-											<img alt="Icon support" class="support-img" src="img/plane.png">
-											<h2 class="support-label label">SEND IT NOW</h2>
-											<span class="support-line"></span>
-											<p class="support-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
-											<a class="btn btn--primary" href="#" target="_blank">Read more</a>
+										<td style="border-collapse: collapse;">
+											<img alt="Icon support" class="support-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/plane.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;padding-right: 15px;margin-bottom: 19px;max-width: 100% !important;">
+											<h2 class="support-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 5px;display: inline-block;margin-bottom: 20px;vertical-align: top;">SEND IT NOW</h2>
+											<span class="support-line" style="display: block;background-color: #e7e7e8;width: 100%;height: 2px;margin-bottom: 20px;"></span>
+											<p class="support-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
+											<a class="btn btn--primary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #50c3af;">Read more</a>
 										</td>
-										<td style="width: 80px;"></td>
-										<td>
-											<img alt="Icon support" class="support-img" src="img/pencil.png">
-											<h2 class="support-label label">SEND IT NOW</h2>
-											<span class="support-line"></span>
-											<p class="support-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
-											<a class="btn btn--primary" href="#" target="_blank">Read more</a>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td bgcolor="#F5F5F5" class="news-bg-td">
-								<table cellpadding="0" cellspacing="0" width="600" align="center">
-									<tr>
-										<td>
-											<img alt="News Image" src="img/img-05.jpg" width="264px" height="208px">
-										</td>
-										<td style="width: 34px;"></td>
-										<td style="width: 300px;">
-											<h2 class="support-label label">SEND IT NOW</h2>
-											<span class="support-line"></span>
-											<p class="support-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
-											<a class="btn btn--secondary" href="#" target="_blank">Read more</a>
+										<td class="news-sm-td-block" style="border-collapse: collapse;"></td>
+										<td style="border-collapse: collapse;">
+											<img alt="Icon support" class="support-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/pencil.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;padding-right: 15px;margin-bottom: 19px;max-width: 100% !important;">
+											<h2 class="support-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 5px;display: inline-block;margin-bottom: 20px;vertical-align: top;">SEND IT NOW</h2>
+											<span class="support-line" style="display: block;background-color: #e7e7e8;width: 100%;height: 2px;margin-bottom: 20px;"></span>
+											<p class="support-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
+											<a class="btn btn--primary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #50c3af;">Read more</a>
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#50c3af" class="sponsor-td">
-								<table cellpadding="0" cellspacing="0" width="600" align="center">
+							<td bgcolor="#f5f5f5" class="news-bg-td" style="border-collapse: collapse;padding-top: 60px;padding-bottom: 60px;">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
 									<tr>
-										<td>
-											<img class="sponsor-icon" src="img/star.png" alt="Icon star">
-											<h2 class="sponsor-label">this template was featured on </h2>
-											<span class="sponsor-line"></span>
+										<td style="border-collapse: collapse;">
+											<img class="news-bg-img" alt="News Image" src="img/img-05.jpg" height="208px" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
+										</td>
+										<td style="width: 34px;border-collapse: collapse;"></td>
+										<td style="width: 310px; border-collapse: collapse;">
+											<h2 class="news-bg-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 5px;display: inline-block;margin-bottom: 20px;vertical-align: top;">JUST FOR YOU ON THEMEFOREST</h2>
+											<span class="news-bg-line" style="display: block;background-color: #e7e7e8;width: 100%;height: 2px;margin-bottom: 20px;"></span>
+											<p class="news-bg-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
+											<a class="btn btn--secondary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #d2d5da;">Read more</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td bgcolor="#50c3af" class="sponsor-td" style="border-collapse: collapse;padding-top: 50px;padding-bottom: 70px;text-align: center;">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+									<tr>
+										<td style="border-collapse: collapse;">
+											<img class="sponsor-icon" src="img/star.png" alt="Icon star" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;padding-right: 8px;vertical-align: text-top;max-width: 100% !important;">
+											<h2 class="sponsor-label" style="display: inline-block;color: #ffffff;font-family: 'PT Sans', sans-serif;text-transform: uppercase;font-size: 15px;font-weight: 700;margin-top: 0;margin-bottom: 22px;">this template was featured on </h2>
+											<span class="sponsor-line" style="display: block;width: 251px;height: 2px;margin-right: auto;margin-left: auto;margin-bottom: 40px;background-color: #5cc7b4;"></span>
 										</td>
 									</tr>
 									<tr>
-										<td >
-											<table cellpadding="0" cellspacing="0" width="600" align="center">
+										<td style="border-collapse: collapse;">
+											<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
 												<tr>
-													<td>
+													<td class="sponsor-item" style="border-collapse: collapse;">
 														<a href="#" target="_blank">
-															<img class="sponsor-img" src="img/sponsor-01.png" alt="">
+															<img class="sponsor-img" src="img/sponsor-01.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;max-width: 100% !important;">
 														</a>
 													</td>
-													<td>
+													<td class="sponsor-item" style="border-collapse: collapse;">
 														<a href="#" target="_blank">
-															<img class="sponsor-img" src="img/sponsor-02.png" alt="">
+															<img class="sponsor-img" src="img/sponsor-02.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;max-width: 100% !important;">
 														</a>
 													</td>
-													<td>
+													<td class="sponsor-item" style="border-collapse: collapse;">
 														<a href="#" target="_blank">
-															<img class="sponsor-img" src="img/sponsor-03.png" alt="">
+															<img class="sponsor-img" src="img/sponsor-03.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;max-width: 100% !important;">
 														</a>
 													</td>
-													<td>
+													<td class="sponsor-item" style="border-collapse: collapse;">
 														<a href="#" target="_blank">
-															<img class="sponsor-img" src="img/sponsor-04.png" alt="">
+															<img class="sponsor-img" src="img/sponsor-04.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;max-width: 100% !important;">
 														</a>
 													</td>
 												</tr>
@@ -229,33 +854,33 @@
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#f5f5f5" class="footer-td">
-								<table cellpadding="0" cellspacing="0" width="600" align="center">
+							<td bgcolor="#f5f5f5" class="footer-td" style="border-collapse: collapse;padding-top: 24px;padding-bottom: 24px;">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
 									<tr>
-										<td align="left" class="footer-copyright">
-											<span>Elenea ©</span>
-											copyright 2013 - Unsubscribe here
+										<td class="footer-copyright" style="border-collapse: collapse;color: #aaacaf;font-family: 'PT Sans', sans-serif;font-size: 13px;font-weight: 400;">
+											<span style="color: #787b80;">Elenea ©</span>
+											copyright 2020 - Unsubscribe here
 										</td>
-										<td align="right" class="footer-socials">
-											<table cellpadding="0" cellspacing="0">
+										<td class="footer-socials" style="border-collapse: collapse;">
+											<table class="footer-socials-table" cellpadding="0" cellspacing="0" width="80">
 												<tr>
-													<td>
-														<a href="#">
-															<img alt="Icon google-plus" src="img/google-plus.png">
+													<td style="border-collapse: collapse;">
+														<a href="#" style="margin-left: 15px;display: inline-block;">
+															<img alt="Icon google-plus" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/google-plus.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
 														</a>
 													</td>
-													<td>
-														<a href="#">
-															<img alt="Icon twitter" src="img/twitter.png">
+													<td style="border-collapse: collapse;">
+														<a href="#" style="margin-left: 15px;display: inline-block;">
+															<img alt="Icon twitter" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/twitter.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
 														</a>
 													</td>
-													<td>
-														<a href="#">
-															<img alt="Icon facebook" src="img/facebook.png">
+													<td style="border-collapse: collapse;">
+														<a href="#" style="margin-left: 15px;display: inline-block;">
+															<img alt="Icon facebook" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/facebook.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
 														</a>
 													</td>
 												</tr>
-										  </table>
+											</table>
 										</td>
 									</tr>
 								</table>
