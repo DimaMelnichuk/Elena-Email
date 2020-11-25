@@ -38,27 +38,6 @@
 			mso-table-rspace: 0pt;
 		}
 
-		.btn {
-			display: inline-block;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			padding-right: 14px;
-			padding-left: 14px;
-			border-radius: 20px;
-			text-decoration: none;
-			font-size: 14px;
-			font-weight: 400;
-			color: #f5f5f5;
-		}
-
-		.btn--primary {
-			background-color: #50c3af;
-		}
-
-		.btn--secondary {
-			background-color: #d2d5da;
-		}
-
 		.label {
 			color: #384048;
 			font-family: 'PT Sans', sans-serif;
@@ -94,12 +73,13 @@
 			margin-right: auto;
 			margin-left: auto;
 			margin-bottom: 25px;
+			margin-top: 0;
 		}
 		.header-menu {
 			padding-bottom: 65px;
 		}
 
-		.header-menu a {
+		.header-menu a{
 			display: inline-block;
 			color: #ffffff;
 			font-family: "Open Sans", sans-serif;
@@ -124,6 +104,7 @@
 		.header-subtitle {
 			color: #ffffff;
 			font-size: 15px;
+			line-height: 10px;
 			font-weight: 700;
 			padding-bottom: 83px;
 		}
@@ -146,15 +127,6 @@
 
 		.header-btn {
 			display: inline-block;
-			padding-top: 18px;
-			padding-bottom: 18px;
-			padding-right: 45px;
-			padding-left: 45px;
-			border-radius: 25px;
-			font-size: 15px;
-			font-weight: 700;
-			text-decoration: none;
-			color: #f5f5f5;
 		}
 
 		.features-td {
@@ -197,8 +169,8 @@
 		.news-md-img {
 			margin-bottom: 40px;
 			margin-right: 0;
-			width: 264px;
 			height: 167px;
+			width: 100%;
 		}
 
 		.news-md-label {
@@ -237,7 +209,7 @@
 			font-size: 18px;
 			font-weight: 700;
 			text-transform: uppercase;
-			margin-top: 5px;
+			margin-top: 2px;
 			margin-bottom: 20px;
 			vertical-align: top;
 		}
@@ -283,15 +255,15 @@
 			margin-bottom: 25px;
 		}
 
-		.news-sm-btn {
-			display: inline-block;
-		}
 		.news-bg-td {
 			padding-top: 60px;
 			padding-bottom: 60px;
 		}
+		.news-bg-block {
+			width: 50px;
+		}
 		.news-bg-img {
-			width: 100%;
+			width: 450px;
 		}
 		.sponsor-td {
 			padding-top: 50px;
@@ -417,6 +389,12 @@
 			}
 			.news-sm-td td {
 				display: block !important;
+				width: 100% !important;
+				margin-bottom: 30px !important;
+			}
+			.news-sm-img {
+				width: 100% !important;
+				height: 200px !important;;
 			}
 			.footer-copyright,
 			.footer-socials {
@@ -469,18 +447,13 @@
 			.news-md-descr {
 				margin-bottom: 25px !important;
 			}
-			.news-sm-td td{
-				margin-bottom: 25px !important;
-				width: 200px !important;
-				margin-right: auto !important;
-				margin-left: auto !important;
-			}
 			.news-bg-td td {
 				display: block !important;
 				width: 100% !important;
 			}
 			.news-bg-img {
 				margin-bottom: 25px !important;
+				width: 100%;
 			}
 			.sponsor-td {
 				padding-bottom: 50px !important;
@@ -625,34 +598,44 @@
 	</style>
 </head>
 
-<body style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;line-height: 100%;font-family: &quot;open sans&quot: ;, sans-serif: ;width: 100% !important;">
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+<body>
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
 		<tbody>
 			<tr>
-				<td style="border-collapse: collapse;">
-					<table class="main table-800" cellpadding="0" cellspacing="0" width="800" align="center" style="min-width: 320px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border: 1px solid #dddddd;">
+				<td>
+					<table class="main table-800" cellpadding="0" cellspacing="0" width="800" align="center">
 						<tr>
-							<td class="header-td" style="border-collapse: collapse;text-align: center;">
-								<table class="table-800" cellpadding="0" cellspacing="0" width="800" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<td class="header-td">
+								<table class="table-800" cellpadding="0" cellspacing="0" width="800" align="center">
 									<tr>
-										<td style="border-collapse: collapse;">
+										<td>
 											<div class="header-bg" style="background: url('https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/bg.jpg') #1B3D47 no-repeat;background-size: cover;width: 100%;padding-top: 60px;padding-bottom: 120px;">
-												<img class="logo" alt="Logo" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/logo.png" style="margin-bottom: 45px;margin-left: auto;margin-right: auto;outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;padding: 0;display: block;max-width: 100% !important;">
-												<div class="header-menu" style="padding-bottom: 65px;">
-													<a href="#" target="_blank" style="margin-right: 10px;display: inline-block;color: #ffffff;font-family: &quot;Open Sans&quot;, sans-serif;text-decoration: none;text-transform: uppercase;font-size: 13px;font-weight: 600;padding: 15px;">HOME</a>
-													<a href="#" target="_blank" style="margin-right: 10px;display: inline-block;color: #ffffff;font-family: &quot;Open Sans&quot;, sans-serif;text-decoration: none;text-transform: uppercase;font-size: 13px;font-weight: 600;padding: 15px;">SERVICES</a>
-													<a href="#" target="_blank" style="margin-right: 10px;display: inline-block;color: #ffffff;font-family: &quot;Open Sans&quot;, sans-serif;text-decoration: none;text-transform: uppercase;font-size: 13px;font-weight: 600;padding: 15px;">Features</a>
-													<a href="#" target="_blank" style="display: inline-block;color: #ffffff;font-family: &quot;Open Sans&quot;, sans-serif;text-decoration: none;text-transform: uppercase;font-size: 13px;font-weight: 600;padding: 15px;">CONTACT</a>
+												<img class="header-logo" alt="Logo" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/logo.png">
+												<div class="header-menu">
+													<span>
+														<a href="#" target="_blank">HOME</a>
+													</span>
+													<span>
+														<a href="#" target="_blank">SERVICES</a>
+													</span>
+													<span>
+														<a href="#" target="_blank">Features</a>
+													</span>
+													<span>
+														<a href="#" target="_blank">CONTACT</a>
+													</span>
 												</div>
-												<div class="header-title" style="color: #ffffff;font-size: 53px;line-height: normal;font-weight: 700;padding-bottom: 35px;">HAVE A GOOD DAY</div>
-												<div class="header-subtitle" style="color: #ffffff;font-size: 15px;font-weight: 700;padding-bottom: 83px;">
-													<span class="header-subtitle-line header-line-left" style="width: 101px;height: 2px;background-color: #ffffff;opacity: 0.24;display: inline-block;vertical-align: middle;margin-right: 30px;"></span>
+												<div class="header-title">HAVE A GOOD DAY</div>
+												<div class="header-subtitle">
+													<span class="header-subtitle-line header-line-left"></span>
 													<span>
 														JUST FOR YOU ON THEMEFOREST
 													</span>
-													<span class="header-subtitle-line header-line-right" style="width: 101px;height: 2px;background-color: #ffffff;opacity: 0.24;display: inline-block;vertical-align: middle;margin-left: 30px;"></span>
+													<span class="header-subtitle-line header-line-right" ></span>
 												</div>
-												<a class="header-btn btn--primary" href="#" target="_blank" style="background-color: #50c3af;display: inline-block;padding-top: 18px;padding-bottom: 18px;padding-right: 45px;padding-left: 45px;border-radius: 25px;font-size: 15px;font-weight: 700;text-decoration: none;color: #f5f5f5;">GET YOUR COPY NOW</a>
+												<a class="header-btn" href="#" target="_blank">
+													<img src="https://lh3.googleusercontent.com/e-blK8iqCMRwXnTXm56XZverxUTrcWRNOt6UEU1BxCq6XrUrXSdt0RUuwsjOPPXYI8mS9-epbQBCe2_dnY5yIvAr1egt1r2kkCLTjsS7y7Bro_qvWMX41O7VdsWsixfKcX3vaBJVd-z0XT1AW13peEOjwx5BntBWQ4G3pc-68yG-VOtwd3vpci3ZJnnKMNCyFh9_7qGUGtgBMyaIY8C46B0vsWc9tntZa8yO4WYtGAp4B3pqS05FTMQ0Bv8NAeyEH-NGuSG8UphF37OIN6lF-NXtDYgqO5Lyok7kvlTi1c1768pTOeeBr_DdMJW8SsH2Ius7ZVfeJ95a6rrr8sWrL_vkdFhbVmzsxmg_4jQv6Bap2Vv8-nJ8BALkhFlgX1dGnxrNq1Ufh1FuXO8oMDGC8e3GHE7O_GVNiBnDzxVzCUu55GuppCUVmyC2NujEPmRRnIzgdamyIT5pMuewM8o_Yr9AaveTFpXyVzdbQXhPWn06KfI4Cf76bp5a-EYqFqYBW5GNLg87no0kXl7QCVicGqVA7BZwc6e110UwVR0t77R8baivLGhLXn-4dPipt11KjiBVLRcR9u8NDw0SQX4BTuRdMeXjeNWwf6O2V2RHbQbxedZZiV0ExklkQr_S3eC7vfgTyWHLAnx-DFSUPKrKrACCkt4eT37o3HZlVEAk0IL611skS3NtZ8t_3MCS=w235-h48-no?authuser=4https://lh3.googleusercontent.com/e-blK8iqCMRwXnTXm56XZverxUTrcWRNOt6UEU1BxCq6XrUrXSdt0RUuwsjOPPXYI8mS9-epbQBCe2_dnY5yIvAr1egt1r2kkCLTjsS7y7Bro_qvWMX41O7VdsWsixfKcX3vaBJVd-z0XT1AW13peEOjwx5BntBWQ4G3pc-68yG-VOtwd3vpci3ZJnnKMNCyFh9_7qGUGtgBMyaIY8C46B0vsWc9tntZa8yO4WYtGAp4B3pqS05FTMQ0Bv8NAeyEH-NGuSG8UphF37OIN6lF-NXtDYgqO5Lyok7kvlTi1c1768pTOeeBr_DdMJW8SsH2Ius7ZVfeJ95a6rrr8sWrL_vkdFhbVmzsxmg_4jQv6Bap2Vv8-nJ8BALkhFlgX1dGnxrNq1Ufh1FuXO8oMDGC8e3GHE7O_GVNiBnDzxVzCUu55GuppCUVmyC2NujEPmRRnIzgdamyIT5pMuewM8o_Yr9AaveTFpXyVzdbQXhPWn06KfI4Cf76bp5a-EYqFqYBW5GNLg87no0kXl7QCVicGqVA7BZwc6e110UwVR0t77R8baivLGhLXn-4dPipt11KjiBVLRcR9u8NDw0SQX4BTuRdMeXjeNWwf6O2V2RHbQbxedZZiV0ExklkQr_S3eC7vfgTyWHLAnx-DFSUPKrKrACCkt4eT37o3HZlVEAk0IL611skS3NtZ8t_3MCS=w235-h48-no?authuser=4" alt="">
+												</a>
 											</div>
 										</td>
 									</tr>
@@ -660,107 +643,113 @@
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#eeeeef" class="features-td" style="border-collapse: collapse;padding-top: 55px;padding-bottom: 65px;text-align: center;">
-								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<td bgcolor="#eeeeef" class="features-td">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 									<tr>
-										<td align="center" style="border-collapse: collapse;">
-											<img class="features-icon" alt="user-group" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/user-group.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;height: 42px;margin-bottom: 30px;margin-right: auto;margin-left: auto;max-width: 100% !important;">
-											<h2 class="features-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">PROFESIONALS</h2>
-											<span class="features-line" style="display: inline-block;width: 135px;height: 2px;background-color: #e3e4e5;margin-bottom: 25px;"></span>
-											<p class="features-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 0;">Lorem ipsum dolor sit amet consectetur elit. </p>
+										<td align="center">
+											<img class="features-icon" alt="user-group" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/user-group.png">
+											<h2 class="features-label label">PROFESIONALS</h2>
+											<span class="features-line"></span>
+											<p class="features-descr descr">Lorem ipsum dolor sit amet consectetur elit. </p>
 										</td>
-										<td align="center" style="border-collapse: collapse;">
-											<img class="features-icon" alt="user-group" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/heart.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;height: 42px;margin-bottom: 30px;margin-right: auto;margin-left: auto;max-width: 100% !important;">
-											<h2 class="features-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">AMATEURS</h2>
-											<span class="features-line" style="display: inline-block;width: 135px;height: 2px;background-color: #e3e4e5;margin-bottom: 25px;"></span>
-											<p class="features-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 0;">Lorem ipsum dolor sit amet consectetur elit. </p>
+										<td align="center">
+											<img class="features-icon" alt="user-group" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/heart.png">
+											<h2 class="features-label label">AMATEURS</h2>
+											<span class="features-line"></span>
+											<p class="features-descr descr">Lorem ipsum dolor sit amet consectetur elit. </p>
 										</td>
-										<td align="center" style="border-collapse: collapse;">
-											<img class="features-icon" alt="user-group" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/headset.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;height: 42px;margin-bottom: 30px;margin-right: auto;margin-left: auto;max-width: 100% !important;">
-											<h2 class="features-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">FOR EVERYONE</h2>
-											<span class="features-line" style="display: inline-block;width: 135px;height: 2px;background-color: #e3e4e5;margin-bottom: 25px;"></span>
-											<p class="features-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 0;">Lorem ipsum dolor sit amet consectetur elit. </p>
+										<td align="center">
+											<img class="features-icon" alt="user-group" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/headset.png">
+											<h2 class="features-label label">FOR EVERYONE</h2>
+											<span class="features-line"></span>
+											<p class="features-descr descr">Lorem ipsum dolor sit amet consectetur elit. </p>
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#f5f5f5" class="news-md-td" style="border-collapse: collapse;padding-top: 65px;padding-bottom: 75px;">
-								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<td bgcolor="#f5f5f5" class="news-md-td"">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 									<tr>
-										<td style="border-collapse: collapse;">
-											<img class="news-md-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-01.jpg" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;margin-bottom: 40px;max-width: 100% !important;width: 100%;">
-											<h2 class="news-md-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 23px;">Responsive email template</h2>
-											<span class="news-md-line" style="display: block;width: 100%;height: 2px;background-color: #efeff0;margin-bottom: 30px;"></span>
-											<p class="news-md-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 35px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<td>
+											<img class="news-md-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-01.jpg">
+											<h2 class="news-md-label label">Responsive email template</h2>
+											<span class="news-md-line"></span>
+											<p class="news-md-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 												Donec interdum mollis</p>
-											<a class="btn btn--primary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #50c3af;">Read more</a>
+											<a href="#" target="_blank">
+												<img src="https://lh3.googleusercontent.com/QdFCJFwjYu66q8Uc667Gcl6qTt3U3-ZorLFStIClLynykBZaLXpdhii7foB2ykHyErlePJAInTLTAzR8SIA0LMFuMaA6PNuBRrHEzvr1NiPag-FeKPTX3F3fyV9B-9ESxSksoUZ-pawk_7Q3jSfx0kSa8JmEEuqHPSED-QfzYixzdNklBe2QLEf5OAeh4AyW0ntbCfiuPWuKQCN_dax-Pe5xJNtPMyEC8ZaCcn40GPs-yv6HM3-4Brlos2FCNnGgbosKNuaB1b11_-7BvMpN_u8qA0ArluUwiYBYhoth0_ZdzSHHrJfyJqQphZIzihuvfG4t62Tt53d74ueJ-6ggo_dfFb0d9aNDW9IhbyKBZMDQxBVF_UQ8SJ7exyZxLyRgd3RWG1rxruqNmrMCD2tpoWjGJ_NgKlVNXy9tJ3FuRq6h4AVLhNNXW0J6QBHf4fWjDSAcVs9ZI1zlRYUUCH-m6oFERBfZTGXlXP8pkqdL8LvMBZd40h-Xp6sDqBsjYWdrbfzScDZNRVTWfQZdNPd_ZduW0QgFemSX9IhzFxi2AIcCEaShWIXSpD8Sorl0rb5JVd1LhDg6jnvT7LBiWcuOCvesOPNIHo7jrunLSu1lfJ_U9oiC-ULbdGhdSnaMZI855gRY_M2YW3BiB9V2-khqtVAPhEIka3FV_Vq4CGs5YiC7nsZTpexDmhRFmIb4=w98-h35-no?authuser=4" alt="">
+											</a>
 										</td>
-										<td class="news-md-td-block" style="border-collapse: collapse;width: 50px;"></td>
-										<td style="border-collapse: collapse;">
-											<img class="news-md-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-02.jpg" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;margin-bottom: 40px;margin-right: 0;max-width: 100% !important;width: 100%;">
-											<h2 class="news-md-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 23px;">Fully compatible template</h2>
-											<span class="news-md-line" style="display: block;width: 100%;height: 2px;background-color: #efeff0;margin-bottom: 30px;"></span>
-											<p class="news-md-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 35px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<td  class="news-md-td-block"></td>
+										<td>
+											<img class="news-md-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-02.jpg">
+											<h2 class="news-md-label label">Fully compatible template</h2>
+											<span class="news-md-line"></span>
+											<p class="news-md-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 												Donec interdum mollis</p>
-											<a class="btn btn--primary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #50c3af;">Read more</a>
+											<a href="#" target="_blank">
+												<img src="https://lh3.googleusercontent.com/QdFCJFwjYu66q8Uc667Gcl6qTt3U3-ZorLFStIClLynykBZaLXpdhii7foB2ykHyErlePJAInTLTAzR8SIA0LMFuMaA6PNuBRrHEzvr1NiPag-FeKPTX3F3fyV9B-9ESxSksoUZ-pawk_7Q3jSfx0kSa8JmEEuqHPSED-QfzYixzdNklBe2QLEf5OAeh4AyW0ntbCfiuPWuKQCN_dax-Pe5xJNtPMyEC8ZaCcn40GPs-yv6HM3-4Brlos2FCNnGgbosKNuaB1b11_-7BvMpN_u8qA0ArluUwiYBYhoth0_ZdzSHHrJfyJqQphZIzihuvfG4t62Tt53d74ueJ-6ggo_dfFb0d9aNDW9IhbyKBZMDQxBVF_UQ8SJ7exyZxLyRgd3RWG1rxruqNmrMCD2tpoWjGJ_NgKlVNXy9tJ3FuRq6h4AVLhNNXW0J6QBHf4fWjDSAcVs9ZI1zlRYUUCH-m6oFERBfZTGXlXP8pkqdL8LvMBZd40h-Xp6sDqBsjYWdrbfzScDZNRVTWfQZdNPd_ZduW0QgFemSX9IhzFxi2AIcCEaShWIXSpD8Sorl0rb5JVd1LhDg6jnvT7LBiWcuOCvesOPNIHo7jrunLSu1lfJ_U9oiC-ULbdGhdSnaMZI855gRY_M2YW3BiB9V2-khqtVAPhEIka3FV_Vq4CGs5YiC7nsZTpexDmhRFmIb4=w98-h35-no?authuser=4" alt="">
+											</a>
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#eeeeef" class="support-td" style="border-collapse: collapse;padding-top: 63px;padding-bottom: 63px;">
-								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<td bgcolor="#eeeeef" class="support-td">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 									<tr>
-										<td style="border-collapse: collapse;">
-											<img alt="Icon support" class="support-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/support.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;padding-right: 15px;margin-bottom: 19px;max-width: 100% !important;">
-											<h2 class="support-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 5px;display: inline-block;margin-bottom: 20px;vertical-align: top;">Fully Supported template</h2>
-											<span class="support-line" style="display: block;background-color: #e7e7e8;width: 100%;height: 2px;margin-bottom: 20px;"></span>
-											<p class="support-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<td>
+											<img alt="Icon support" class="support-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/support.png">
+											<h2 class="support-label label" >Fully Supported template</h2>
+											<span class="support-line"></span>
+											<p class="support-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 												Suspendisse malesuada sodales risus, a adipiscing lorem commodo vitae. Ut semper
 												semper lacus. Suspendisse convallis vel tellus at consectetur. Aenean risus arcu</p>
-											<a class="btn btn--secondary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #d2d5da;">Read more</a>
+											<a href="#" target="_blank">
+												<img src="https://lh3.googleusercontent.com/wAi_p4fwkctoBV-mPf9KGIWLXlQ3Meh4Wd_iBxBvuqZXlo83CFiu9ywMKkF9CgBmxJqHDIum16xneAQJZToGANGCMqG1vDLRcjFhO4K-Y3dQHGiULY5B8DXoRGtXqnE0luSv6aVcPGCzN0fNQAaJEkpMnJVzgBIZkIPdWMIucOuWV2kKnL7MdZsV3wyb-ARJ8oPTNeUbyVRzdKoa_etiuiUaYEP7Mc2kneAEpzjYLqmCYnt2jGI1Cd-76-xNlMwa_UYE7V9lHzxYEvKU-nqAHvxITbDjjuh5jj3Q0HL3b2Indc_yR6DqC_Gwbq4H6pSrXbZYu_nlS7wmZM30Pc9Wxcxw-XUP6KBQaT6E0ZvkiRgGkEKt5_TOiOnd7bgVNC_GLnn5j9pHdc8nb8ohv6o0zHksYl41kqvp5dg1bMwzhQ9stg7OkeJEANF2QfNXorGSgkfb9pnOY3caxYkNsQO6clhWIFVQA6AS-u7hjCuHjQPEzJX_omf-du2DkdE1haITIScv6mLN_fmOzK3sqhjY3GKPkbd0TpdkPbz4u0IMUy3HNxrf590EAXbhLQpTH_O1qxqPjchZc7Dvw89Vu1VvPTux4EXEK3sb6Oj9nP9NRmgdmXOrE9Ly0N-GT9MUpC1ZQoaW6q2DUGmdfp1a-MfTDTGTy3ZZnBBGDkBPwsxx-MTSO5uZolIfMLmWQkw7=w98-h35-no?authuser=4" alt="">
+											</a>
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 				 		<tr>
-							<td bgcolor="#f5f5f5" class="news-sm-td" style="border-collapse: collapse;padding-top: 60px;padding-bottom: 70px;">
-								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<td bgcolor="#f5f5f5" class="news-sm-td">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 									<tr>
-										<td style="border-collapse: collapse;">
-											<img class="news-sm-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-03.jpg"  height="138px" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;margin-bottom: 40px;max-width: 100% !important;">
-											<h2 class="news-sm-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">FULLY Layered PSD</h2>
-											<span class="news-sm-line" style="display: block;width: 180px;height: 2px;background-color: #ebecec;margin-bottom: 25px;"></span>
-											<p class="news-sm-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<td>
+											<img class="news-sm-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-03.jpg" height="138px">
+											<h2 class="news-sm-label label">FULLY Layered PSD</h2>
+											<span class="news-sm-line" ></span>
+											<p class="news-sm-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 											</p>
-											<a class="news-sm-btn" href="#" target="_blank" style="display: inline-block;">
-												<img src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/btn.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
+											<a href="#" target="_blank">
+												<img src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/btn.png" alt="">
 											</a>
 										</td>
-										<td style="width: 20px;"></td>
-										<td style="border-collapse: collapse;">
-											<img class="news-sm-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-06.jpg"  height="138px" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;margin-bottom: 40px;max-width: 100% !important;">
-											<h2 class="news-sm-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">FUll Compatibility</h2>
-											<span class="news-sm-line" style="display: block;width: 180px;height: 2px;background-color: #ebecec;margin-bottom: 25px;"></span>
-											<p class="news-sm-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<td ></td>
+										<td>
+											<img class="news-sm-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-06.jpg" height="138px">
+											<h2 class="news-sm-label label">FUll Compatibility</h2>
+											<span class="news-sm-line"></span>
+											<p class="news-sm-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 											</p>
-											<a class="news-sm-btn" href="#" target="_blank" style="display: inline-block;">
-												<img src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/btn.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
+											<a href="#" target="_blank">
+												<img src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/btn.png" alt="">
 											</a>
 										</td>
-										<td style="width: 20px;"></td>
-										<td style="border-collapse: collapse;">
-											<img class="news-sm-img" alt="News img" src="img/img-04.jpg"  height="138px" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;margin-bottom: 40px;max-width: 100% !important;">
-											<h2 class="news-sm-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 16px;font-weight: 700;text-transform: uppercase;margin-top: 0;margin-bottom: 20px;">very great modules</h2>
-											<span class="news-sm-line" style="display: block;width: 180px;height: 2px;background-color: #ebecec;margin-bottom: 25px;"></span>
-											<p class="news-sm-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<td ></td>
+										<td>
+											<img class="news-sm-img" alt="News img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-04.jpg" height="138px">
+											<h2 class="news-sm-label label">very great modules</h2>
+											<span class="news-sm-line"></span>
+											<p class="news-sm-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 											</p>
-											<a class="news-sm-btn" href="#" target="_blank" style="display: inline-block;">
-												<img src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/btn.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
+											<a href="#" target="_blank">
+												<img src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/btn.png" alt="">
 											</a>
 										</td>
 
@@ -769,81 +758,88 @@
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#eeeeef" class="support-td" style="border-collapse: collapse;padding-top: 60px;padding-bottom: 70px;">
-								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<td bgcolor="#eeeeef" class="news-sm-td">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 									<tr>
-										<td style="border-collapse: collapse;">
-											<img alt="Icon support" class="support-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/plane.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;padding-right: 15px;margin-bottom: 19px;max-width: 100% !important;">
-											<h2 class="support-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 5px;display: inline-block;margin-bottom: 20px;vertical-align: top;">SEND IT NOW</h2>
-											<span class="support-line" style="display: block;background-color: #e7e7e8;width: 100%;height: 2px;margin-bottom: 20px;"></span>
-											<p class="support-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-												Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
-											<a class="btn btn--primary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #50c3af;">Read more</a>
+										<td>
+											<img alt="Icon support" class="support-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/plane.png">
+											<h2 class="support-label label">SEND IT NOW</h2>
+											<span class="support-line"></span>
+											<p class="support-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												Suspendisse malesuada sodales risus, a adipiscing lorem. 
+											</p>
+											<a href="#" target="_blank">
+												<img src="https://lh3.googleusercontent.com/wAi_p4fwkctoBV-mPf9KGIWLXlQ3Meh4Wd_iBxBvuqZXlo83CFiu9ywMKkF9CgBmxJqHDIum16xneAQJZToGANGCMqG1vDLRcjFhO4K-Y3dQHGiULY5B8DXoRGtXqnE0luSv6aVcPGCzN0fNQAaJEkpMnJVzgBIZkIPdWMIucOuWV2kKnL7MdZsV3wyb-ARJ8oPTNeUbyVRzdKoa_etiuiUaYEP7Mc2kneAEpzjYLqmCYnt2jGI1Cd-76-xNlMwa_UYE7V9lHzxYEvKU-nqAHvxITbDjjuh5jj3Q0HL3b2Indc_yR6DqC_Gwbq4H6pSrXbZYu_nlS7wmZM30Pc9Wxcxw-XUP6KBQaT6E0ZvkiRgGkEKt5_TOiOnd7bgVNC_GLnn5j9pHdc8nb8ohv6o0zHksYl41kqvp5dg1bMwzhQ9stg7OkeJEANF2QfNXorGSgkfb9pnOY3caxYkNsQO6clhWIFVQA6AS-u7hjCuHjQPEzJX_omf-du2DkdE1haITIScv6mLN_fmOzK3sqhjY3GKPkbd0TpdkPbz4u0IMUy3HNxrf590EAXbhLQpTH_O1qxqPjchZc7Dvw89Vu1VvPTux4EXEK3sb6Oj9nP9NRmgdmXOrE9Ly0N-GT9MUpC1ZQoaW6q2DUGmdfp1a-MfTDTGTy3ZZnBBGDkBPwsxx-MTSO5uZolIfMLmWQkw7=w98-h35-no?authuser=4" alt="">
+											</a>
 										</td>
-										<td class="news-sm-td-block" style="border-collapse: collapse;"></td>
-										<td style="border-collapse: collapse;">
-											<img alt="Icon support" class="support-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/pencil.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;padding-right: 15px;margin-bottom: 19px;max-width: 100% !important;">
-											<h2 class="support-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 5px;display: inline-block;margin-bottom: 20px;vertical-align: top;">SEND IT NOW</h2>
-											<span class="support-line" style="display: block;background-color: #e7e7e8;width: 100%;height: 2px;margin-bottom: 20px;"></span>
-											<p class="support-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<td class="news-sm-td-block"></td>
+										<td>
+											<img alt="Icon support" class="support-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/pencil.png">
+											<h2 class="support-label label">SEND IT NOW</h2>
+											<span class="support-line"></span>
+											<p class="support-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 												Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
-											<a class="btn btn--primary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #50c3af;">Read more</a>
+											<a href="#" target="_blank">
+												<img src="https://lh3.googleusercontent.com/wAi_p4fwkctoBV-mPf9KGIWLXlQ3Meh4Wd_iBxBvuqZXlo83CFiu9ywMKkF9CgBmxJqHDIum16xneAQJZToGANGCMqG1vDLRcjFhO4K-Y3dQHGiULY5B8DXoRGtXqnE0luSv6aVcPGCzN0fNQAaJEkpMnJVzgBIZkIPdWMIucOuWV2kKnL7MdZsV3wyb-ARJ8oPTNeUbyVRzdKoa_etiuiUaYEP7Mc2kneAEpzjYLqmCYnt2jGI1Cd-76-xNlMwa_UYE7V9lHzxYEvKU-nqAHvxITbDjjuh5jj3Q0HL3b2Indc_yR6DqC_Gwbq4H6pSrXbZYu_nlS7wmZM30Pc9Wxcxw-XUP6KBQaT6E0ZvkiRgGkEKt5_TOiOnd7bgVNC_GLnn5j9pHdc8nb8ohv6o0zHksYl41kqvp5dg1bMwzhQ9stg7OkeJEANF2QfNXorGSgkfb9pnOY3caxYkNsQO6clhWIFVQA6AS-u7hjCuHjQPEzJX_omf-du2DkdE1haITIScv6mLN_fmOzK3sqhjY3GKPkbd0TpdkPbz4u0IMUy3HNxrf590EAXbhLQpTH_O1qxqPjchZc7Dvw89Vu1VvPTux4EXEK3sb6Oj9nP9NRmgdmXOrE9Ly0N-GT9MUpC1ZQoaW6q2DUGmdfp1a-MfTDTGTy3ZZnBBGDkBPwsxx-MTSO5uZolIfMLmWQkw7=w98-h35-no?authuser=4" alt="">
+											</a>
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#f5f5f5" class="news-bg-td" style="border-collapse: collapse;padding-top: 60px;padding-bottom: 60px;">
-								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<td bgcolor="#f5f5f5" class="news-bg-td"">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 									<tr>
-										<td style="border-collapse: collapse;">
-											<img class="news-bg-img" alt="News Image" src="img/img-05.jpg" height="208px" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
+										<td>
+											<img class="news-bg-img" alt="News Image" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/img-05.jpg" height="208px">
 										</td>
-										<td style="width: 34px;border-collapse: collapse;"></td>
-										<td style="width: 310px; border-collapse: collapse;">
-											<h2 class="news-bg-label label" style="color: #384048;font-family: 'PT Sans', sans-serif;font-size: 18px;font-weight: 700;text-transform: uppercase;margin-top: 5px;display: inline-block;margin-bottom: 20px;vertical-align: top;">JUST FOR YOU ON THEMEFOREST</h2>
-											<span class="news-bg-line" style="display: block;background-color: #e7e7e8;width: 100%;height: 2px;margin-bottom: 20px;"></span>
-											<p class="news-bg-descr descr" style="color: #787b80;font-family: 'PT Sans', sans-serif;font-size: 14px;font-weight: 400;line-height: 24px;margin-top: 0;margin-bottom: 30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										<td class="news-bg-block"></td>
+										<td>
+											<h2 class="news-bg-label label">JUST FOR YOU ON THEMEFOREST</h2>
+											<span class="news-bg-line"></span>
+											<p class="news-bg-descr descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 												Suspendisse malesuada sodales risus, a adipiscing lorem. </p>
-											<a class="btn btn--secondary" href="#" target="_blank" style="display: inline-block;padding-top: 10px;padding-bottom: 10px;padding-right: 14px;padding-left: 14px;border-radius: 20px;text-decoration: none;font-size: 14px;font-weight: 400;color: #f5f5f5;background-color: #d2d5da;">Read more</a>
+											<a href="#" target="_blank">
+												<img src="https://lh3.googleusercontent.com/wAi_p4fwkctoBV-mPf9KGIWLXlQ3Meh4Wd_iBxBvuqZXlo83CFiu9ywMKkF9CgBmxJqHDIum16xneAQJZToGANGCMqG1vDLRcjFhO4K-Y3dQHGiULY5B8DXoRGtXqnE0luSv6aVcPGCzN0fNQAaJEkpMnJVzgBIZkIPdWMIucOuWV2kKnL7MdZsV3wyb-ARJ8oPTNeUbyVRzdKoa_etiuiUaYEP7Mc2kneAEpzjYLqmCYnt2jGI1Cd-76-xNlMwa_UYE7V9lHzxYEvKU-nqAHvxITbDjjuh5jj3Q0HL3b2Indc_yR6DqC_Gwbq4H6pSrXbZYu_nlS7wmZM30Pc9Wxcxw-XUP6KBQaT6E0ZvkiRgGkEKt5_TOiOnd7bgVNC_GLnn5j9pHdc8nb8ohv6o0zHksYl41kqvp5dg1bMwzhQ9stg7OkeJEANF2QfNXorGSgkfb9pnOY3caxYkNsQO6clhWIFVQA6AS-u7hjCuHjQPEzJX_omf-du2DkdE1haITIScv6mLN_fmOzK3sqhjY3GKPkbd0TpdkPbz4u0IMUy3HNxrf590EAXbhLQpTH_O1qxqPjchZc7Dvw89Vu1VvPTux4EXEK3sb6Oj9nP9NRmgdmXOrE9Ly0N-GT9MUpC1ZQoaW6q2DUGmdfp1a-MfTDTGTy3ZZnBBGDkBPwsxx-MTSO5uZolIfMLmWQkw7=w98-h35-no?authuser=4" alt="">
+											</a>
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#50c3af" class="sponsor-td" style="border-collapse: collapse;padding-top: 50px;padding-bottom: 70px;text-align: center;">
-								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<td bgcolor="#50c3af" class="sponsor-td">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 									<tr>
-										<td style="border-collapse: collapse;">
-											<img class="sponsor-icon" src="img/star.png" alt="Icon star" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;padding-right: 8px;vertical-align: text-top;max-width: 100% !important;">
-											<h2 class="sponsor-label" style="display: inline-block;color: #ffffff;font-family: 'PT Sans', sans-serif;text-transform: uppercase;font-size: 15px;font-weight: 700;margin-top: 0;margin-bottom: 22px;">this template was featured on </h2>
-											<span class="sponsor-line" style="display: block;width: 251px;height: 2px;margin-right: auto;margin-left: auto;margin-bottom: 40px;background-color: #5cc7b4;"></span>
+										<td>
+											<img class="sponsor-icon" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/star.png" alt="Icon star">
+											<h2 class="sponsor-label">this template was featured on </h2>
+											<span class="sponsor-line"></span>
 										</td>
 									</tr>
 									<tr>
-										<td style="border-collapse: collapse;">
-											<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+										<td>
+											<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 												<tr>
-													<td class="sponsor-item" style="border-collapse: collapse;">
+													<td class="sponsor-item">
 														<a href="#" target="_blank">
-															<img class="sponsor-img" src="img/sponsor-01.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;max-width: 100% !important;">
+															<img class="sponsor-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/sponsor-01.png" alt="">
 														</a>
 													</td>
-													<td class="sponsor-item" style="border-collapse: collapse;">
+													<td class="sponsor-item">
 														<a href="#" target="_blank">
-															<img class="sponsor-img" src="img/sponsor-02.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;max-width: 100% !important;">
+															<img class="sponsor-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/sponsor-02.png" alt="">
 														</a>
 													</td>
-													<td class="sponsor-item" style="border-collapse: collapse;">
+													<td class="sponsor-item">
 														<a href="#" target="_blank">
-															<img class="sponsor-img" src="img/sponsor-03.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;max-width: 100% !important;">
+															<img class="sponsor-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/sponsor-03.png" alt="">
 														</a>
 													</td>
-													<td class="sponsor-item" style="border-collapse: collapse;">
+													<td class="sponsor-item">
 														<a href="#" target="_blank">
-															<img class="sponsor-img" src="img/sponsor-04.png" alt="" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: inline-block;max-width: 100% !important;">
+															<img class="sponsor-img" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/sponsor-04.png" alt="">
 														</a>
 													</td>
 												</tr>
@@ -854,29 +850,29 @@
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="#f5f5f5" class="footer-td" style="border-collapse: collapse;padding-top: 24px;padding-bottom: 24px;">
-								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+							<td bgcolor="#f5f5f5" class="footer-td">
+								<table class="table-600" cellpadding="0" cellspacing="0" width="600" align="center">
 									<tr>
-										<td class="footer-copyright" style="border-collapse: collapse;color: #aaacaf;font-family: 'PT Sans', sans-serif;font-size: 13px;font-weight: 400;">
+										<td class="footer-copyright">
 											<span style="color: #787b80;">Elenea ©</span>
 											copyright 2020 - Unsubscribe here
 										</td>
-										<td class="footer-socials" style="border-collapse: collapse;">
+										<td class="footer-socials">
 											<table class="footer-socials-table" cellpadding="0" cellspacing="0" width="80">
 												<tr>
-													<td style="border-collapse: collapse;">
-														<a href="#" style="margin-left: 15px;display: inline-block;">
-															<img alt="Icon google-plus" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/google-plus.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
+													<td>
+														<a href="#">
+															<img alt="Icon google-plus" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/google-plus.png">
 														</a>
 													</td>
-													<td style="border-collapse: collapse;">
-														<a href="#" style="margin-left: 15px;display: inline-block;">
-															<img alt="Icon twitter" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/twitter.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
+													<td>
+														<a href="#">
+															<img alt="Icon twitter" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/twitter.png">
 														</a>
 													</td>
-													<td style="border-collapse: collapse;">
-														<a href="#" style="margin-left: 15px;display: inline-block;">
-															<img alt="Icon facebook" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/facebook.png" style="outline: none;text-decoration: none;border: none;-ms-interpolation-mode: bicubic;margin: 0;padding: 0;display: block;max-width: 100% !important;">
+													<td>
+														<a href="#">
+															<img alt="Icon facebook" src="https://raw.githubusercontent.com/DimaMelnichuk/Elena-Email/main/img/facebook.png">
 														</a>
 													</td>
 												</tr>
